@@ -1,0 +1,11 @@
+name: Stats
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    rund-on: windows
+    
+    steps: 
