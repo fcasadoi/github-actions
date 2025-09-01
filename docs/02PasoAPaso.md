@@ -14,7 +14,7 @@ Sincronizar repositorios entre **Azure DevOps** y **GitLab** puede hacerse de va
 > Ideal si quieres que GitLab refleje los cambios hechos en Azure DevOps.
 
 
-## Opción 2: Sincronización unidireccional
+## Opción 2: Sincronización unidireccional usando `pipeline`
 ### Desde Azure DevOps (push hacia GitLab)
 
 1. En Azure DevOps, crea un **Service Connection** con GitLab (usando token personal).
@@ -45,7 +45,7 @@ Más compleja y requiere:
 - Evita sincronizar ramas protegidas sin revisión.
 - Configura notificaciones para detectar errores de sincronización.
 
-# Webhook que sincronice repositorios entre Azure DevOps Server y GitLab
+# Webhook en DevOps utilizando mirroring en GitLab
 Para preparar un **webhook que sincronice repositorios entre Azure DevOps Server y GitLab**, lo más directo es configurar un webhook en Azure DevOps que, al detectar un evento (como un push), **envíe una solicitud HTTP a GitLab** para que este actualice su repositorio desde Azure DevOps.
 
 ## Webhook desde Azure DevOps Server hacia GitLab
